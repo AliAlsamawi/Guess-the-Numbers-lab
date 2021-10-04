@@ -26,9 +26,7 @@ const game = {
           
             userInput = parseInt(prompt (`This is wrong buddy, 
             
-            the guess must be between ${this.biggestNum} and $
-            
-            {this.smallestNum}. Trying again dude!`))
+            the guess must be between ${this.biggestNum} and ${this.smallestNum}. Trying again dude!`))
           // console.log(getGuess)
         } 
         return userInput
@@ -43,7 +41,7 @@ const game = {
         } else if (this.prevGuesses[this.prevGuesses.length -1] < this.secretNum) {
           alert(`Your guess was too low, try again! Previous guesses were ${this.prevGuesses.join()}`)
         } else if ( this.prevGuesses[this.prevGuesses.length -1] === this.secretNum) {
-          alert(`Right on the money! Your guess was the secret number ${this.secretNum}! Previous guesses were ${this.prevGuesses.join()}.`)
+          alert(`That's the right number! congrates. The right number is ${this.secretNum} Previous guesses were ${this.prevGuesses.join()}.`)
         }
       }
     }
